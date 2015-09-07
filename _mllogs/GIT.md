@@ -46,8 +46,44 @@ we need to know that：
 - **版本回退**
 	- git log or git reflog
 	- git reset --hard <使用git log or git reflog中的hash值 前7位就可以了> 
+	- cat <filename> :来显示文件内容
 
 > note 在unix 和mac os中版本回退的命令与window的是同的
+
+----------
+
+## Tagging Version ##
+
+- 给commit的版本贴个标签tag：**git tag v1**
+- 使用tag name来check out 回退：**git checkout v1^**
+- 查看使用的标签 **git tag**
+- 查看标签列表 **git hist master --all**
+
+> Learn how to tag commits with names for future reference
+
+### 实践 ###
+
+- 我新建了一个hello.md文件，并添加内容为【# Hello world】
+- **git add** 之后
+- **git commit** 之后
+- **git tag v1**
+- **git checkout v1^**
+- **cat hello.md** 之后显示
+ 
+		cat：hello.md: No such file or directory
+
+> - 也就是说 git tag v1 是将commit的快照下的那个版本打上标签v1，便于以后回退
+> - 那么 v1^ （或v1~1）是表示的是 v1上一个版本或上一代
+
+- **git checkout v1** 之后
+- **cat hello.md** 之后 我的文件又回来了，真的太棒了
+
+		# Hello world
+
+- git tag 查看所使用的 tag
+- git hist master --all
+
+> So cool, I can see the tag.
 
 ----------
 
@@ -63,3 +99,6 @@ we need to know that：
   	- type = cat-file -t
   	- dump = cat-file -p
   	- rf = reflog
+
+----------
+
