@@ -1,6 +1,12 @@
 # Learn Git #
 
-- version control
+- 1-version control
+	- practice 
+- 2-历史版本
+	- 版本回退
+- 3-设置版本标签
+- 4-小技巧：设置alias
+- 5-撤销本地修改(before staging)
 
 ## 1-Push a new local repo to Github ##
 
@@ -21,7 +27,7 @@
 
 ----------
 
-## git 基础 ##
+## 2-git 基础 ##
 
 - working directory：工作区，本地目录，你可以对里面的文件进行操作
 - staging area
@@ -52,7 +58,7 @@ we need to know that：
 
 ----------
 
-## Tagging Version ##
+## 3-Tagging Version ##
 
 - 给commit的版本贴个标签tag：**git tag v1**
 - 使用tag name来check out 回退：**git checkout v1^**
@@ -88,7 +94,7 @@ we need to know that：
 ----------
 
 
-## 小技巧 ##
+## 4-小技巧 ##
 
 - alias：修改git普通命令，使用别名在.gitconfig中修改如，使用起来更方便
 	- co = checkout
@@ -101,4 +107,32 @@ we need to know that：
   	- rf = reflog
 
 ----------
+
+## 5-撤销本地修改undoing local changes(before staging) ##
+
+> - Learn how to revert changes in the working directory. 
+> - 若我本地工作目录中修改了文件hello.md, 但是我并没有提交add 到缓存区中，更没有commit到远程库中，那么我该如何回退或撤销？
+
+- 我在hello.md文件中添加了 
+	-  I want to learn how to revert changes in the working directory.
+ 
+				# Hello world
+
+				- I want to learn how to revert changes in the working directory.
+ 
+- 确定上一次的提交是在master上
+	- git checkout master
+	- 这个使用使得我之前commit的撤回了，回退到我上上会的版本处
+		- 比如最近的版本是 v1
+		- 使用上面的命令后，回到了上上个版本v1^处
+- git status
+	- 提示我修改了hello.md文件，但是没有add 和commit
+- git checkout hello.md
+- git status
+- cat hello.md 之后就只剩下了如下内容，说明我撤销了最近一次的本地修改
+
+		# Hello world
+
+
+> It is so cool. I love Git.
 
