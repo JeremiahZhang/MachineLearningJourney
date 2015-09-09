@@ -7,6 +7,7 @@
 - 3-设置版本标签
 - 4-小技巧：设置alias
 - 5-撤销本地修改(before staging)
+- 6-撤销已添加到缓存区的修改（before commit）
 
 ## 1-Push a new local repo to Github ##
 
@@ -112,6 +113,7 @@ we need to know that：
 
 > - Learn how to revert changes in the working directory. 
 > - 若我本地工作目录中修改了文件hello.md, 但是我并没有提交add 到缓存区中，更没有commit到远程库中，那么我该如何回退或撤销？
+> - git checkout <file-name>
 
 - 我在hello.md文件中添加了 
 	-  I want to learn how to revert changes in the working directory.
@@ -136,3 +138,52 @@ we need to know that：
 
 > It is so cool. I love Git.
 
+----------
+
+## 6-撤销已添加到缓存区的修改 ##
+
+> Learn how to revert changes that have been staged.
+
+- **git reset HEAD <file name>**
+- git checkout 用来撤销工作区文件修改
+
+修改的文件，已经git add 添加到缓存区，但是没有commit到远程库repo，如何撤销本次的添加到缓存区呢？
+
+- 简单修改文件hello.md，内容如下
+			
+		# Hello world
+		- I want to learn how to revert changes in the working directory. Got it.
+		- Undoing staged changes(before committing)
+- git add hello.md
+	- 将文件添加到了缓存区
+	- 但是没有 commit
+- cat hello.md
+	- 查看文件内容
+- git status
+	- 可以发现提示 **modified hello.md 一行** 是蓝色的，说明已经将文件添加到缓存区
+- git reset HEAD hello.md
+	- 撤销本次add添加到缓存区
+	- 【note】:reset命令不会修改工作目录中的文件内容
+- git status
+	- 发现此时 **modified hello.md 一行** 是红色的，说明已经撤销了git add(上传到缓存区)
+- cat hello.md
+	- 文件内容没有改变
+- git checkout hello.md
+	- 此时就撤销了在工作目录中hello.md内容的修改
+- cat hello.md
+		
+		# Hello world
+		- I want to learn how to revert changes in the working directory. Got it.
+
+回到了修改前状态。
+
+> It is so cool. I love Git.
+
+### 问题来了 ###
+
+- 那么我该如何再回到我修改后的状态呢？
+	- 因为本次我没有commit
+	- 不可使用版本回退
+	- git log 后没有hash值所以不可使用 git reset --hard <前7位hash值，但不包括挂号>
+
+----------
