@@ -9,6 +9,7 @@
 - 5-撤销本地修改(before staging)
 - 6-撤销已添加到缓存区的修改（before commit）
 - 7-撤销commit到远程库（git revert）
+- 8-git pull将远程库拉到本地
 
 ## 1-Push a new local repo to Github ##
 
@@ -191,7 +192,22 @@ we need to know that：
 
 ## 7-Undoing commit changes ##
 
+- git add <file-name>
+- git commit -m "..."
 - git revert HEAD
 
 > 学习在commit之后，撤销此次的commit。
+> but 在window中出现vim底层界面。
 
+## 8-git pull ##
+
+- 问题：我在远程库repo中进行了文件的修改，与我本地目录中的文件出现了不同
+- git push 提示不成功，需要git pull
+- then 操作
+	- git remote add learnml ../...git 【这个之前设置过了就不用再设置了】
+	- git branch --track learnml master
+	- git pull learnml mashter
+
+> 这个流程过程和git push 正好可逆。
+> - git push 之前先要 add 与commit
+> - git pull 之前，先要将分支track一下
