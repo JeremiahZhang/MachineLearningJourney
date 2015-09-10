@@ -53,7 +53,7 @@ we need to know that：
 	- git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short：以另一种显示方式来呈现
 - **版本回退**
 	- git log or git reflog
-	- git reset --hard <使用git log or git reflog中的hash值 前7位就可以了> 
+	- git reset --hard <使用git log or git reflog中的hash值 前7位就可以了> :[将版本回退到hash值所代表的commit那次版本处]
 	- cat <filename> :来显示文件内容
 
 > note 在unix 和mac os中版本回退的命令与window的是同的
