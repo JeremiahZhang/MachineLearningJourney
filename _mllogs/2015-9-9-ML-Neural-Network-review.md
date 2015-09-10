@@ -72,6 +72,7 @@ networks and apply it to the task of hand-written digit recognition
 - 准确率
 	- 训练好θ之后
 	- 进行分析预测查看准确率
+
 ----------
 
 - 简单回顾了Andrew Ng的神经网络

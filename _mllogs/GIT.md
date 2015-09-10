@@ -8,6 +8,7 @@
 - 4-小技巧：设置alias
 - 5-撤销本地修改(before staging)
 - 6-撤销已添加到缓存区的修改（before commit）
+- 7-撤销commit到远程库（git revert）
 
 ## 1-Push a new local repo to Github ##
 
@@ -187,3 +188,10 @@ we need to know that：
 	- git log 后没有hash值所以不可使用 git reset --hard <前7位hash值，但不包括挂号>
 
 ----------
+
+## 7-Undoing commit changes ##
+
+- git revert HEAD
+
+> 学习在commit之后，撤销此次的commit。
+
