@@ -23,7 +23,7 @@
 	- copy the SSH of the new repo
 	- git add -a
 	- git commit -m "add new repo"
-	- git remote add learnml <my SSH clone URL add>
+	- git remote add learnml <-my SSH clone URL add->
 	- git push -u learnml master
 
 ----------
@@ -144,8 +144,8 @@ we need to know that：
 
 > Learn how to revert changes that have been staged.
 
-- **git reset HEAD <file name>**
-- git checkout 用来撤销工作区文件修改
+- **git reset HEAD <file-name>**
+- git checkout <file-name> 用来撤销工作区文件修改
 
 修改的文件，已经git add 添加到缓存区，但是没有commit到远程库repo，如何撤销本次的添加到缓存区呢？
 
