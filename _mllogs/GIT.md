@@ -211,3 +211,7 @@ we need to know that：
 > 这个流程过程和git push 正好可逆。
 > - git push 之前先要 add 与commit
 > - git pull 之前，先要将分支track一下
+
+## 9-git remote rm  ##
+
+远程库重名了 或需要删除 用此命令
