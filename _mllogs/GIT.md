@@ -206,7 +206,7 @@ we need to know that：
 - then 操作
 	- git remote add learnml ../...git 【这个之前设置过了就不用再设置了】
 	- git branch --track learnml master
-	- git pull learnml mashter
+	- git pull learnml master
 
 > 这个流程过程和git push 正好可逆。
 > - git push 之前先要 add 与commit
