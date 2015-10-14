@@ -121,7 +121,12 @@ sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了
 	- 要使代价函数最小（拟合最好or 权值与b在训练中效果比较好使得output结果误差较小or判别的准确率较高）在Ng的讲解中就可以理解了
 	- 采用GD gradient descent 梯度下降法
 - 什么是GD
-- 为什么用GD
+	- 介绍
+	- 公式
+	- 落球寻找最小值的比喻非常好 加深理解  
+![GD](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/GD.JPG)
+		+ 当学习因子过小 会造成小球经过低谷后又向上爬
+		+ 当学习因子过小 会造成小球下落过慢 （当然这里不考虑重力势能）
 - Stochastic GD（随机选取样子中一些样本进行梯度计算 搜索w 与 b）
 - Batch GD （使用所有样本计算梯度w 与 b）
 
