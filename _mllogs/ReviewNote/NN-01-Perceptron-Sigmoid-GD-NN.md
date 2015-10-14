@@ -51,7 +51,8 @@ Perceptron 感知器 比较简单 如图所示
 
 公式:
 ![formula-1](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula1.JPG)
-![formula-2]()
+![formula-2](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula2.JPG)
+b = - threshold
 
 理解
 
@@ -73,7 +74,22 @@ Perceptron 感知器 比较简单 如图所示
 
 其实也就是说 上面神经网络中每个神经元通过公式2来决定输出的情况 那么 公式2就可当作是激活神经元的一个函数(activation function)。
 
-Sigmoid神经元与Perceptron神经元的区别就在于这个激活神经元的激活函数activation function
+Sigmoid神经元与Perceptron神经元的区别就在于这个激活神经元的激活函数activation function  
+Perceptron的激活函数 为一个阶跃函数 公式 2
+
+![Perceptron-PIC](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-Perceptron-PIC.JPG)
 
 ### Sigmoid ###
 
+激活函数：
+
+![formula-3](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula3.JPG)
+![formula-4](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula4.JPG)
+![Sigmoid-PIC](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-Sigmoid-PIC.JPG)
+
+sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了   
+但可以人为设定 函数值output >= 0.5 的为1 < 0.5的则为0
+
+### 两者差别 ###
+
+![formula5](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula5.JPG)
