@@ -109,4 +109,22 @@ sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了
 - 中间层 层数与神经元数目根据学习来调整 一般采用启发式算法来优化决定
 - 输出层 神经元数目根据需要检测的结果确定
 
-![structure]()
+![structure](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/NN-structure.JPG)
+
+----------
+
+## 神经网络学习  ##
+
+### Gradient Descent ###
+
+- 代价函数（cost function）
+	- 要使代价函数最小（拟合最好or 权值与b在训练中效果比较好使得output结果误差较小or判别的准确率较高）在Ng的讲解中就可以理解了
+	- 采用GD gradient descent 梯度下降法
+- 什么是GD
+- 为什么用GD
+- Stochastic GD（随机选取样子中一些样本进行梯度计算 搜索w 与 b）
+- Batch GD （使用所有样本计算梯度w 与 b）
+
+详见 纸质笔记
+
+10/14/2015 4:32:57 PM 3蕃茄
