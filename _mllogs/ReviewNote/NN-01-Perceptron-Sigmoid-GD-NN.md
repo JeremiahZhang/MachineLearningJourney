@@ -92,4 +92,21 @@ sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了
 
 ### 两者差别 ###
 
+![diff](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-diff.JPG)
 ![formula5](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula5.JPG)
+
+权值或bias的微小变化 对 output 造成微小的影响 若是近线性的 就比较好反馈学习了  
+在perceptron中 从激活函数-阶跃函数中 看出 输出结果是0 or 1 所以结果是阶跃or跳跃的 w或bias的影响造成的结果可能不是那微小的变化 而是“质”的变化   
+在sigmoid神经元中 sigmoid函数比阶跃函数光滑了 输出△oupute近似是随△w与△b线性变化了 这样在学习过程中 可根据学习结果 来对w与b进行调整 学习了
+
+为什么使用sigmoid 因为e的求导很特别 为了数学计算上的便利性
+
+----------
+
+## 神经网络结构 ##
+
+- 输入层 神经元数目（节点数）为样本维数
+- 中间层 层数与神经元数目根据学习来调整 一般采用启发式算法来优化决定
+- 输出层 神经元数目根据需要检测的结果确定
+
+![structure]()
