@@ -122,11 +122,13 @@ sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了
 	- 采用GD gradient descent 梯度下降法
 - 什么是GD
 	- 介绍
-	- 公式
+	- 公式  
+![GD-formula](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/gd-formula.JPG)
+		+ 其中`θ0`为bias b， `θ1`.为权重w 只是写法不同 `J()函数` 为 cost function
 	- 落球寻找最小值的比喻非常好 加深理解  
 ![GD](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/GD.JPG)
-		+ 当学习因子过小 会造成小球经过低谷后又向上爬
-		+ 当学习因子过小 会造成小球下落过慢 （当然这里不考虑重力势能）
+		+ 当学习因子α过小 会造成小球经过低谷后又向上爬
+		+ 当学习因子α过小 会造成小球下落过慢 （当然这里不考虑重力势能）
 - Stochastic GD（随机选取样子中一些样本进行梯度计算 搜索w 与 b）
 - Batch GD （使用所有样本计算梯度w 与 b）
 
