@@ -33,5 +33,18 @@ ANN是用来干嘛的？
 人类大脑可以处理负责的事物 我日常学习 做决策需要神经元的作用 有时 我做的决策比较好 有时不然 那么ANN模拟人脑 也可以进行“学习” “决策”
 虽然达不到人类的效果 但是可以辅助人 
 
+- 学习
+- 决策 
+
 ## 神经元 ##
 
+- Perceptrons
+- Sigmoid
+
+处理需要神经元 ANN中的常见神经元为以上两种
+
+Perceptron 感知器 比较简单 如图所示
+
+![perceptrons](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-Perceptrons.JPG)
+
+![formula](https://raw.githubusercontent.com/JeremiahZhang/MachineLearningJourney/master/_images/15-10-14-formula1.JPG)
