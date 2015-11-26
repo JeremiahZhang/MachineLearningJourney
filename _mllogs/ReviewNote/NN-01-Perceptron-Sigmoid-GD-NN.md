@@ -137,3 +137,41 @@ sigmoid神经元的输入可以是0-1间的任意数 而输出也是0 1了
 详见 纸质笔记
 
 10/14/2015 4:32:57 PM 3蕃茄
+
+## 代码理解算法
+
+[network.py](https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network.py) 代码结构
+
+	- Class Network
+		+ __init__ 初始化基本参数
+			- 神经网络层数
+			- 权重 w
+			- b-biases 偏差
+		+ feedforward # 前向计算 恩 计算各层每个神经元
+			- 调用 sigmoid fun
+		+ SGD		# 随机梯度下降
+			- 调用 update_mini_batch
+		+ update_mini_batch # 使用小样本 进行更新 权重和 biases偏差
+			- 得调用 backprop 计算
+		+ backprop # 嗯 这就是后馈 来进行 w 和 b 的更新 梯度下降嘛  [第二章有介绍](neuralnetworksanddeeplearning.com/chap2.html) 
+			- cost_derivative
+			- sigmoid_prime fun
+		+ evaluate # 评估 训练结果
+		+ cost_derivative # 代价函数的求导
+	- sigmoid fun
+	- sigmoid_prime fun # sigmoid 求导
+
+恩 使用
+
+	import network # 导入
+	net = network.Network([784, 30, 10]) # 784 为第一层输入层 30为第二层 10为输出层
+	net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+
+恩 记得在Andrew的课程中 学习因子eta的影响还是挺大的 Andrew老师 给出了自己一般如何选择 eta 的经验
+
+理解了结构 主要是 w*a+b 这个矩阵形式处理 恩 看代码可以更好理解 NN 进入下一张 BP的复习 继续 GO
+
+Thursday, 26. November 2015 01:42PM 
+
+
+
