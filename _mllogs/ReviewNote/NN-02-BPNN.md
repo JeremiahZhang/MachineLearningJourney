@@ -59,9 +59,58 @@
 
 学习BP学习算法 明白BP算法的过程及其原理 作者讲得真不错
 
-## 后续 ##
+## BP the big picture
 
-- 实践算法
+- 参考[backpropagation_the_big_picture](http://neuralnetworksanddeeplearning.com/chap2.html#backpropagation_the_big_picture) 
+
+假设有一个权重产生一点变化 会影响最后的输出C  
+但是这个整个过程计算是复杂的如
+
+![1权重微小变化](https://dn-learnml.qbox.me/bp01w.png) 
+
+权重微小变化引起 中间神经元激励 a的变化
+
+![2中间神经元微小变化](https://dn-learnml.qbox.me/bp02w.png) 
+
+![3后续中间神经元微小变化](https://dn-learnml.qbox.me/bp03.png) 
+
+![4对输出的影响](https://dn-learnml.qbox.me/bp04.png) 
+
+方程:
+
+![5c输出影响方程](https://dn-learnml.qbox.me/bp05.png) 
+
+![6激励影响方程](https://dn-learnml.qbox.me/bp06.png) 
+
+表示
+
+![7激励](https://dn-learnml.qbox.me/bp07.png) 
+
+公式
+
+![8激励传递影响](https://dn-learnml.qbox.me/bp08.png) 
+
+![9于w关联](https://dn-learnml.qbox.me/bp09.png) 
+
+输出C受的影响变化表示
+
+![10c的变化](https://dn-learnml.qbox.me/bp10.png) 
+
+![11所有传递过来的](https://dn-learnml.qbox.me/bp11.png) 
+
+输出C对中间权重 w的偏导数
+
+![12 偏导数](https://dn-learnml.qbox.me/bp12.png) 
+
+![13 传递](https://dn-learnml.qbox.me/bp13.png) 
+
+恩 其实BP算法就是求 将公式53 只是使用一种后馈的方式 更简洁方便求得相关偏导数 进行GD的计算
+
+主要就是BP的4骑士方程了
+
+## 后续
+
+- 代码
 	- [] GD-NN python代码
 	- [] BP-NN python代码  
 
