@@ -111,7 +111,8 @@
 ## 后续
 
 - 代码
-	- [] GD-NN python代码
-	- [] BP-NN python代码  
+	- [x] GD-NN python代码
+	- [x] BP-NN python代码  
 
 10/15/2015 7:44:07 PM 7 + 1蕃茄
+Monday, 28. December 2015 02:33PM Python code
