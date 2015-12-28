@@ -1,0 +1,70 @@
+# Improving the way neural network Note
+
+第三章的学习笔记 主要内容:
+
+- [ ] 1 better cost functions
+	- [the cross-entropy cost function](http://neuralnetworksanddeeplearning.com/chap3.html#the_cross-entropy_cost_function)
+- [ ] 4 regulariztion methods 
+	- L1
+	- L2
+	- dropout
+	- artificial expansion of the trainning data
+	> make our networks better at generalizing beyond the training data
+- [ ] a better method for initializing the weights in the network
+- [ ] a set of heuristics to help choose good hyper-parameters for the network
+- [ ]  several other techniques
+
+这么多技术怎么办
+
+> The philosophy is that the best entree to the plethora of available techniques is in-depth study of a few of the most important. 
+
+> Mastering those important techniques is not just useful in its own right, but will also deepen your understanding of what problems can arise when you use neural networks. That will leave you well prepared to quickly pick up other techniques, as you need them.
+
+嗯 这么多资料怎么办 找到一本 dive in 
+
+## 1.0 the cross-entropy cost function
+
+### toy example
+
+人类错误明显的时候 学习较快 而人工神经元却不是的  
+神经元学习1: 初始权重 w 偏移 b 不同 学习因子eta为0.15
+
+Chapter03_001_costfunction.jpg
+Chapter03_002_costfunction.jpg
+
+神经元学习2: 初始权重 w 偏移 b 不同 学习因子eta=0.15
+
+Chapter03_003_costfunction.jpg
+Chapter03_004_costfunction.jpg
+
+前150步 神经元的学习慢
+
+解释: 
+
+- 代价函数(Toy example)
+
+Chapter03_005_costfunction.jpg
+
+其中a是神经元输出 y是目标理想输出 x=1， y=0  
+代价函数值的变化 主要与以下两个偏导数有关 C对w和C对b的偏导数
+
+Chapter03_006_costfunction.jpg
+
+计算下可以得到以上两个式子  这2个偏导数的值主要看sigmoid函数的导数了
+
+Chapter03_007_costfunction.jpg
+
+当神经元输出越靠近1的地方 曲线越平坦 其导数的变化率是非常小的 也就是 sigmoid函数的导数小 从而式55 和 56 两个偏导数小 从而导致学习慢下来了
+
+so 看【神经元学习2: 初始权重 w 偏移 b 不同 学习因子eta=0.15】中的初始迭代就非常的慢
+
+> This is the origin of the learning slowdown. What's more, as we shall see a little later, the learning slowdown occurs for essentially the same reason in more general neural networks, not just the toy example we've been playing with.
+
+在大多神经网络中 多是如此原因
+
+### 一个新的代价函数 cross-entropy
+
+
+
+ 
+
