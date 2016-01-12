@@ -2,7 +2,7 @@
 
 第三章的学习笔记 主要内容:
 
-- [ ] 1 better cost functions
+- [x] 1 better cost functions
 	- [the cross-entropy cost function](http://neuralnetworksanddeeplearning.com/chap3.html#the_cross-entropy_cost_function)
 - [ ] 4 regulariztion methods 
 	- L1
@@ -117,11 +117,32 @@ Chapter03_014_costfunction.jpg
 
 Chapter03_014_costfunction.jpg
 
-什么时候使用 cross-entropy 来替代 quadratic cost: 大多时候使用 c-en 以下是 why
+什么时候使用 cross-entropy 来替代 quadratic cost: 大多时候使用 cross-entropy 以下是 why
 
 > When should we use the cross-entropy instead of the quadratic cost? In fact, the cross-entropy is nearly always the better choice, provided the output neurons are sigmoid neurons. To see why, consider that when we're setting up the network we usually initialize the weights and biases using some sort of randomization. It may happen that those initial choices result in the network being decisively wrong for some training input - that is, an output neuron will have saturated near 11, when it should be 00, or vice versa. If we're using the quadratic cost that will slow down learning. It won't stop learning completely, since the weights will continue learning from other training inputs, but it's obviously undesirable.
 
+#### 练习
+
+- 公式问题 还好 只要将 y=0 or 1 带入就知道行不行了
+-  [Binary entropy function](https://en.wikipedia.org/wiki/Binary_entropy_function) 还是挺好理解的 作者讲解之后 
+
+在一些问题中 比如逻辑回归问题中（y在0-1之间） 但对于所有样本 a=y 时cross entropy直最小, 此种情况下 cross-entropy 可写成二进制形式
+
 #### 问题
+
+式 68-70 的证明 见纸质笔记
+
+### 应用 MNIST digits
+
+why 
+
+- So why so much focus on cross-entropy?   
+
+> Part of the reason is that the cross-entropy is a widely-used cost function, and so is worth understanding well. 
+
+> But the more important reason is that ==**neuron saturation**== is an important problem in neural nets, a problem we'll return to repeatedly throughout the book. 
+
+> And so I've discussed the cross-entropy at length because it's a good laboratory to begin understanding neuron saturation and how it may be addressed.
 
 
 

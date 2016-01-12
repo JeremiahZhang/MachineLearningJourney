@@ -2,5 +2,8 @@
 
 from fabric.api import local
 
-def pu():
-    local("git ci ")
+# please use: fab pu:'discribation'
+def pu(discribation):
+    local("git ad")
+    local("git ci -m '%s' " % discribation)
+    local("git pu")
