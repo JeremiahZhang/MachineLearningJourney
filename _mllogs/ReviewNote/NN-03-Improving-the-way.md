@@ -144,6 +144,32 @@ why
 
 > And so I've discussed the cross-entropy at length because it's a good laboratory to begin understanding neuron saturation and how it may be addressed.
 
+### more
+
+- cross-entropy 理论[由来](https://en.wikipedia.org/wiki/Cross_entropy#Motivation)  [书籍推荐](https://books.google.ca/books?id=VWq5GG6ycxMC) 暂且先放着
+
+- 问题？ 因为训练样本x无法通过cost function来选择
+
+## [softmax layers of neurons](http://neuralnetworksanddeeplearning.com/chap3.html#softmax)
+
+- 输出层的激活函数不同 之前用的sigmoid函数 现在使用 softmax函数如下
+
+Chapter03_016_costfunction.jpg
+
+- 练习
+	- 单调性 证明见纸质笔记
+	- Non-locality of softmax 因为随其他的zj变化
+	-  inverting the softmax layer：两边对e的对数`ln`	就可以了
+
+> In fact, it's useful to think of a softmax output layer with log-likelihood cost as being quite similar to a sigmoid output layer with cross-entropy cost.
+
+> log-likelihood cost : c = -ln(a)
+
+- 问题和练习证明未做
+
+Wednesday, 13. January 2016 10:45AM 
+
+## [overfitting_and_regularization](http://neuralnetworksanddeeplearning.com/chap3.html#overfitting_and_regularization) 
 
 
 
