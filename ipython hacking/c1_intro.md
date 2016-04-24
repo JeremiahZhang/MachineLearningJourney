@@ -108,3 +108,25 @@ But i dont know how to use it.
 - *Enter* 新建一行 但是在同一个 input[ ] 中
 - *Shift + Enter* 执行命令
 
+## Customizing IPython
+
+	❯ ipython profile create
+	[ProfileCreate] Generating default config file: u'/home/jeremiahzhang/.config/ipython/profile_default/ipython_config.py'
+	[ProfileCreate] Generating default config file: u'/home/jeremiahzhang/.config/ipython/profile_default/ipython_notebook_config.py'
+	[ProfileCreate] Generating default config file: u'/home/jeremiahzhang/.config/ipython/profile_default/ipython_nbconvert_config.py'
+
+> you can create different names using `ipython profile create profilename`, and then launch IPython with `ipython --profile=profilename` to use that profile.
+
+## reference 
+
+[Learning IPython for Interactive Computing and Data Visualization](http://ipython.rossant.net/minibook/) 
+
+## time 
+
+Sunday, 24. April 2016 03:05PM near 1.5h dive in Ipython
+
+
+
+
+
+
