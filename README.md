@@ -1,30 +1,35 @@
 # README #
 
-- Ubuntu 14.04 LTS
-- Python 2.7.10
+Master Machine Learning the hard way of Anifac, just explore.
+
+## system environment
+
+- win 7
+- install Anaconda
+- Python 2.7.11
+
+## Journey
 
 This is my machine learning portfolio of completed and presented my case studies.
 
-- [ ]neural-networks-and-deep-learning 
-	- [x] Cloned from [mnielsen/neural-networks-and-deep-learning](https://github.com/mnielsen/neural-networks-and-deep-learning)
-- [ ] Jason's tutorial of python sketch: scikit-learn
+- neural-networks-and-deep-learning (part of neural network)
+	- [x] Using neural nets to recognize handwritten digits
+	- [x] How the backpropagation algorithm works
+	- [x] Improving the way neural networks learn
+- IPython minibook
+	- [x] c1
+	- [x] c2
+	- [x] c3
+	- [ ] c4
+- [ ] [data science](https://classroom.udacity.com/courses/ud170/lessons/5430778793/concepts/53994889400923) in udacity 
+	- [ ] data analysis process
+	- [ ] Numpy and Pandas for 1d Plot
+	- [ ] Numpy and Pandas for 2d plot
+	- [ ] Final Project
+- [ ] Projects 
+	- [ ] P1
+	- [ ] P2
+	- [ ] P3
 
-## Install
-
-- [x] [install SciPy Stack](http://www.scipy.org/install.html#individual-packages) 
-	- [x] [Numpy](http://www.numpy.org/) 矩阵 数值计算
-	- [x] [Ipython+ipython-notebook] enhanced interactive console
-	- [x] Scipy 数值计算
-	- [x] Matplotlib 绘图
-	- [x] Sumpy symbolic mathematics
-	- [x] Pandas 数据结构和分析
-
-	$ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-
-	$ sudo easy_install -U scikit-learn # 0.17
-
-	$ nosetest sklearn --exe
-
-	suceed
 
 	
