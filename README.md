@@ -21,10 +21,10 @@ This is my machine learning portfolio of completed and presented my case studies
 	- [x] c2
 	- [x] c3
 	- [ ] c4
-- [ ] [data science](https://classroom.udacity.com/courses/ud170/lessons/5430778793/concepts/53994889400923) in udacity 
-	- [ ] data analysis process
-	- [ ] Numpy and Pandas for 1d Plot
-	- [ ] Numpy and Pandas for 2d plot
+- [x] [data science](https://classroom.udacity.com/courses/ud170/lessons/5430778793/concepts/53994889400923) in udacity 
+	- [x] data analysis process
+	- [x] Numpy and Pandas for 1d Plot
+	- [x] Numpy and Pandas for 2d plot
 	- [ ] Final Project
 - [ ] Projects 
 	- [ ] P1
