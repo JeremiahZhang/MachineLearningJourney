@@ -14,17 +14,8 @@ def draw_art():
     brad.color("yellow")
     brad.speed(2)
 
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    window.exitonclick()
+    draw_square(brad)
 
-def draw_circle():
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("blue")
