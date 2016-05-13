@@ -8,19 +8,21 @@ def draw_square(some_turtle):
 
 def draw_art():
     window = turtle.Screen()
-    
+    window.bgcolor("red")
+
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("yellow")
-    brad.speed(2)
+    brad.speed(10)
 
     draw_square(brad)
 
+    # creat the turtle angie - Draw a circle
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("blue")
     angie.circle(100)
-    angie.speed(2)
+    angie.speed(0)
 
     # how synonmous
     window.exitonclick()
@@ -30,4 +32,4 @@ def draw_trangle():
     trans.shape("turtle")
     trans.color('yellow')
 
-draw_square()
+draw_art()
