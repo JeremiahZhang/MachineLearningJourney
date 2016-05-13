@@ -8,6 +8,9 @@ break_count = 0
 print ("This program started on " + time.ctime())
 
 while (break_count < total_breaks):
-    time.sleep(0.5*60*60)
-    webbrowser.open("http://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    time.sleep(30*60)
+    webbrowser.open("http://www.zanmeishi.com/player/zan.html")
+    print ('Have a nice music, and praise the Lord! ^-^!')
+    time.sheep(5*60)
     break_count += 1
+    print (break_count)
