@@ -15,14 +15,16 @@ def draw_art():
     brad.color("yellow")
     brad.speed(10)
 
-    draw_square(brad)
+    for i in range(1,37):
+        draw_square(brad)
+        brad.right(10)
 
     # creat the turtle angie - Draw a circle
-    angie = turtle.Turtle()
-    angie.shape("arrow")
-    angie.color("blue")
-    angie.circle(100)
-    angie.speed(0)
+    #angie = turtle.Turtle()
+    #angie.shape("arrow")
+    #angie.color("blue")
+    #angie.circle(100)
+    #angie.speed(0)
 
     # how synonmous
     window.exitonclick()
