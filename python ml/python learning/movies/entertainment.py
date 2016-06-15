@@ -12,4 +12,4 @@ avartar = media.Movie("avartar",
                       "avartar poster url", 
                       "avartar youku url")
 
-print(avartar.storyline)
+# print(avartar.storyline)
